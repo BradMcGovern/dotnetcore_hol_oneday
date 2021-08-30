@@ -39,6 +39,7 @@ namespace AutoLot.Mvc.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Privacy()
         {
             return View();

@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using AutoLot.Mvc.Models;
 using AutoLot.Services.Logging;
+using AutoLot.Dal.Repos.Interfaces;
 
 namespace AutoLot.Mvc.Controllers
 {
@@ -54,6 +55,12 @@ namespace AutoLot.Mvc.Controllers
             HttpContext.Features.Get<ITrackingConsentFeature>().GrantConsent();
             return RedirectToAction(nameof(Index), nameof(HomeController).RemoveController(),
                 new {area = ""});
+        }
+        [HttpGet]
+        public IActionResult RazorSyntax([FromServices] ICarRepo carRepo)
+        {
+            var car = carRepo.Find(1);
+            return View(car);
         }
 
         [HttpGet]
