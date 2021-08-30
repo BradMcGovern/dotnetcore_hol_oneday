@@ -17,10 +17,12 @@ namespace AutoLot.Models.Entities
     [Table("Inventory", Schema = "Dbo")]
     public partial class Car : BaseEntity
     {
-        [Required] [DisplayName("Make")] public int MakeId { get; set; }
+        [Required] [DisplayName("Make")] 
+        public int MakeId { get; set; }
 
         [ForeignKey(nameof(MakeId))]
-        [InverseProperty(nameof(Make.Cars))]
+       
+
         public Make? MakeNavigation { get; set; }
 
         [StringLength(50), Required] public string Color { get; set; } = "Gold";
