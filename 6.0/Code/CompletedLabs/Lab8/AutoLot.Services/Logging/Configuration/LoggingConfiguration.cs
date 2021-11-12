@@ -1,11 +1,4 @@
-﻿// Copyright Information
-// ==================================
-// AutoLot - AutoLot.Services - LoggingConfiguration.cs
-// All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/11/06
-// ==================================
-
-namespace AutoLot.Services.Logging.Configuration;
+﻿namespace AutoLot.Services.Logging.Configuration;
 
 public static class LoggingConfiguration
 {
@@ -43,7 +36,6 @@ public static class LoggingConfiguration
         var tableName = settings.MSSqlServer.TableName;
         var schema = settings.MSSqlServer.Schema;
         string restrictedToMinimumLevel = settings.General.RestrictedToMinimumLevel;
-        //config["Logging:MSSqlServer:restrictedToMinimumLevel"].ToString();
         if (!Enum.TryParse<LogEventLevel>(restrictedToMinimumLevel, out var logLevel))
         {
             logLevel = LogEventLevel.Debug;
@@ -60,6 +52,7 @@ public static class LoggingConfiguration
             sqlOptions.BatchPeriod = new TimeSpan(0, 0, 0, 1);
             sqlOptions.BatchPostingLimit = 1;
         }
+
 
         var log = new LoggerConfiguration()
             .MinimumLevel.Is(logLevel)

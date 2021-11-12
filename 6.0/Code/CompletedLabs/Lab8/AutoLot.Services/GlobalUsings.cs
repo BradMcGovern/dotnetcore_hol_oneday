@@ -1,19 +1,11 @@
-﻿// Copyright Information
-// ==================================
-// AutoLot - AutoLot.Services - GlobalUsings.cs
-// All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/11/06
-// ==================================
-
-global using AutoLot.Dal.Repos;
+﻿global using AutoLot.Dal.Repos;
 global using AutoLot.Dal.Repos.Interfaces;
 
-
-global using AutoLot.Services.Logging.Settings;
+global using AutoLot.Services.Logging;
 global using AutoLot.Services.Logging.Interfaces;
+global using AutoLot.Services.Logging.Settings;
 
 global using Microsoft.AspNetCore.Builder;
-
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.Hosting;
@@ -27,7 +19,3 @@ global using Serilog.Sinks.MSSqlServer;
 
 global using System.Data;
 global using System.Runtime.CompilerServices;
-
-
-
-

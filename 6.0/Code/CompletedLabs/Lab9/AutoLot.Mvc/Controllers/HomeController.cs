@@ -5,26 +5,29 @@
 // http://www.skimedic.com 2021/11/06
 // ==================================
 
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using AutoLot.Mvc.Models;
-
 namespace AutoLot.Mvc.Controllers;
 
+[Route("[controller]/[action]")]
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly IAppLogging<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IAppLogging<HomeController> logger)
     {
         _logger = logger;
     }
 
-    public IActionResult Index()
+    [Route("/")]
+    [Route("/[controller]")]
+    [Route("/[controller]/[action]")]
+    [HttpGet]
+    public IActionResult Index([FromServices] IOptionsMonitor<DealerInfo> dealerOptionsMonitor)
     {
-        return View();
+        //_logger.LogAppError("Test error");
+        return View(dealerOptionsMonitor.CurrentValue);
     }
 
+    [HttpGet]
     public IActionResult Privacy()
     {
         return View();

@@ -1,11 +1,4 @@
-﻿// Copyright Information
-// ==================================
-// AutoLot - AutoLot.Services - AppLoggingSettings.cs
-// All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/11/06
-// ==================================
-
-namespace AutoLot.Services.Logging.Settings;
+﻿namespace AutoLot.Services.Logging.Settings;
 
 public class AppLoggingSettings
 {
@@ -32,5 +25,4 @@ public class AppLoggingSettings
         public string FullLogPathAndFileName =>
             $"{Drive}{Path.VolumeSeparatorChar}{Path.DirectorySeparatorChar}{FilePath}{Path.DirectorySeparatorChar}{FileName}";
     }
-
 }

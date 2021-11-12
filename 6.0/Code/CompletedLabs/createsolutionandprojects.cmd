@@ -50,7 +50,7 @@ dotnet add AutoLot.Services package Serilog.Sinks.MSSqlServer
 dotnet add AutoLot.Services package System.Text.Json --prerelease 
 
 dotnet add AutoLot.Services reference AutoLot.Models
-dotnet add AutoLot.Dal.Tests reference AutoLot.Dal
+dotnet add AutoLot.Services reference AutoLot.Dal
 
 rem create the ASP.NET Core Web App (MVC) project and add it to the solution
 dotnet new mvc -lang c# -n AutoLot.Mvc -au none -o .\AutoLot.Mvc -f net6.0
