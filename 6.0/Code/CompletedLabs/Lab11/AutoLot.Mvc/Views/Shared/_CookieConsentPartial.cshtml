@@ -1,8 +1,4 @@
-﻿@using Microsoft.AspNetCore.Http.Features
-@using AutoLot.Mvc.Controllers
-@using AutoLot.Services.Utilities
-
-@{
+﻿@{
     var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
     var showBanner = !consentFeature?.CanTrack ?? false;
     var cookieString = consentFeature?.CreateConsentCookie();

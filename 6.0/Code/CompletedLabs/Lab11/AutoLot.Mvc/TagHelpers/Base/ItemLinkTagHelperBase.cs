@@ -1,39 +1,27 @@
-﻿// Copyright Information
-// ==================================
-// AutoLot - AutoLot.Mvc - ItemLinkTagHelperBase.cs
-// All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/08/11
-// ==================================
+﻿namespace AutoLot.Mvc.TagHelpers.Base;
 
-using AutoLot.Mvc.Controllers;
-using AutoLot.Services.Utilities;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.AspNetCore.Razor.TagHelpers;
-
-namespace AutoLot.Mvc.TagHelpers.Base
+public abstract class ItemLinkTagHelperBase : TagHelper
 {
-    public abstract class ItemLinkTagHelperBase : TagHelper
+    protected readonly IUrlHelper UrlHelper;
+    private string _controllerName;
+    public int? ItemId { get; set; }
+    protected string ActionName { get; set; }
+
+    protected ItemLinkTagHelperBase(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory)
     {
-        protected readonly IUrlHelper UrlHelper;
-        public int? ItemId { get; set; }
-
-        protected ItemLinkTagHelperBase(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory)
-        {
-            UrlHelper = urlHelperFactory.GetUrlHelper(contextAccessor.ActionContext);
-        }
-
-        protected void BuildContent(TagHelperOutput output, 
-            string actionName, string className, string displayText, string fontAwesomeName)
-        {
-            output.TagName = "a"; // Replaces <email> with <a> tag
-            var target = (ItemId.HasValue)
-                ? UrlHelper.Action(actionName, nameof(CarsController).RemoveController(), new {id = ItemId})
-                : UrlHelper.Action(actionName, nameof(CarsController).RemoveController());
-            output.Attributes.SetAttribute("href", target);
-            output.Attributes.Add("class",className);
-            output.Content.AppendHtml($@"{displayText} <i class=""fas fa-{fontAwesomeName}""></i>");
-        }
+        UrlHelper = urlHelperFactory.GetUrlHelper(contextAccessor.ActionContext);
+        _controllerName = contextAccessor.ActionContext.ActionDescriptor.RouteValues["controller"];
     }
+
+    protected void BuildContent(TagHelperOutput output, string cssClassName, string displayText, string fontAwesomeName)
+    {
+        output.TagName = "a"; // Replaces <email> with <a> tag
+        var target = (ItemId.HasValue)
+            ? UrlHelper.Action(ActionName, _controllerName, new {id = ItemId})
+            : UrlHelper.Action(ActionName, _controllerName);
+        output.Attributes.SetAttribute("href", target);
+        output.Attributes.Add("class",cssClassName);
+        output.Content.AppendHtml($@"{displayText} <i class=""fas fa-{fontAwesomeName}""></i>");
+    }
+
 }

@@ -1,41 +1,38 @@
-// Copyright Information
-// ==================================
-// AutoLot - AutoLot.Mvc - CarsController.cs
-// All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/08/11
-// ==================================
+﻿namespace AutoLot.Mvc.Controllers;
 
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-namespace AutoLot.Mvc.Controllers
+[Route("[controller]/[action]")]
+public class CarsController : Controller
 {
-    [Route("[controller]/[action]")]
-    public class CarsController : Controller
+    [Route("/[controller]")]
+    [Route("/[controller]/[action]")]
+    [HttpGet]
+    public IActionResult Index() => View(); 
+
+    [HttpGet("{makeId}/{makeName}")]
+    public IActionResult ByMake(int makeId, string makeName)
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Details(int? id)
-        {
-            return View();
-        }
-
-        public async Task<IActionResult> Create()
-        {
-            return View();
-        }
-
-        public async Task<IActionResult> Edit(int? id)
-        {
-            return View();
-        }
-
-        public IActionResult Delete(int? id)
-        {
-            return View();
-        }
+        return View();
     }
+
+    [HttpGet("{id?}")]
+    public IActionResult Details(int? id)
+    {
+        return View();
+    }
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+    [HttpGet]
+    public IActionResult Edit(int? id)
+    {
+        return View();
+    }
+    [HttpGet]
+    public IActionResult Delete(int? id)
+    {
+        return View();
+    }
+
 }
