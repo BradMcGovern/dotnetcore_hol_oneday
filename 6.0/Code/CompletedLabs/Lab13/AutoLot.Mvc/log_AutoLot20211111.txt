@@ -1,0 +1,1821 @@
+[21-11-11 22:42:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[21-11-11 22:43:01 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+in method  at :
+
+[21-11-11 22:43:01 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+in method  at :
+
+[21-11-11 22:43:01 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[21-11-11 22:43:01 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[21-11-11 22:43:01 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\"
+in method  at :
+
+[21-11-11 22:43:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+in method  at :
+
+[21-11-11 22:43:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:43:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:43:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.2095ms.
+in method  at :
+
+[21-11-11 22:43:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 22:43:09 Warning]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Model.Validation
+Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+[21-11-11 22:43:09 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Infrastructure
+Message:Entity Framework Core "6.0.0" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.0"' with options: "MaxPoolSize=1024 CommandTimeout=60 "
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 3777.3467ms.
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 4095.8899ms
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4472.8988ms
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/css/all.css?v=DLjMP-5CdeGCI2qxnDquVSdPQ6oP_enAUQ2NWfz45dw - -
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/css/site.css?v=S2ihmzMFFc3FWmBWsR-NiddZWa8kbyaQYBx2FDkIoHs - -
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/css/bootstrap.css?v=eTXm0PcnjHYM1YDUkEQ3vYfZxF1BffpYGWz2lFqmCrg - -
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/jquery/jquery.js?v=H-K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk - -
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/js/bootstrap.bundle.js?v=Qesn0fIyfJA0VfGtzm0Kga5Ro9eCzokdNoMPke7bSxE - -
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/bootstrap/js/bootstrap.bundle.js"'
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/bootstrap/css/bootstrap.css"'
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/font-awesome/css/all.css"'
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/jquery/jquery.js"'
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\wwwroot\js\site.js"'
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/css/site.css"'
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 94.7655ms
+in method  at :
+
+[21-11-11 22:43:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 248.7592ms
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/css/site.css"'
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/css/site.css?v=S2ihmzMFFc3FWmBWsR-NiddZWa8kbyaQYBx2FDkIoHs - - - 200 - text/css;+charset=UTF-8 485.8889ms
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/font-awesome/css/all.css"'
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/css/all.css?v=DLjMP-5CdeGCI2qxnDquVSdPQ6oP_enAUQ2NWfz45dw - - - 200 - text/css;+charset=UTF-8 544.5154ms
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/bootstrap/css/bootstrap.css"'
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/css/bootstrap.css?v=eTXm0PcnjHYM1YDUkEQ3vYfZxF1BffpYGWz2lFqmCrg - - - 200 - text/css;+charset=UTF-8 718.8940ms
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 27.4488ms
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff?v=OjiUsI10Bphb2M9OqSEPJeXlzhM - -
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/lib/font-awesome/webfonts/fa-solid-900.woff"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\wwwroot\lib\font-awesome\webfonts\fa-solid-900.woff"'
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff?v=OjiUsI10Bphb2M9OqSEPJeXlzhM - - - 200 101648 application/font-woff 75.7255ms
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/bootstrap/js/bootstrap.bundle.js"'
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/js/bootstrap.bundle.js?v=Qesn0fIyfJA0VfGtzm0Kga5Ro9eCzokdNoMPke7bSxE - - - 200 - text/javascript;+charset=UTF-8 1309.5921ms
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/jquery/jquery.js"'
+in method  at :
+
+[21-11-11 22:43:11 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/jquery/jquery.js?v=H-K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk - - - 200 - text/javascript;+charset=UTF-8 1339.6255ms
+in method  at :
+
+[21-11-11 22:43:12 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+in method  at :
+
+[21-11-11 22:43:12 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\wwwroot\favicon.ico"'
+in method  at :
+
+[21-11-11 22:43:12 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 200 5430 image/x-icon 32.8742ms
+in method  at :
+
+[21-11-11 22:43:15 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Index - -
+in method  at :
+
+[21-11-11 22:43:15 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:15 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Cars\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:43:15 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:43:15 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 6.7092ms.
+in method  at :
+
+[21-11-11 22:43:15 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+ORDER BY [i].[PetName]"
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 291.0961ms.
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" in 331.6733ms
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Index - - - 200 - text/html;+charset=utf-8 360.0363ms
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 3.0333ms
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 22:43:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 13.9550ms
+in method  at :
+
+[21-11-11 22:43:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Edit/5 - -
+in method  at :
+
+[21-11-11 22:43:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Edit\", controller = \"Cars\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Edit(AutoLot.Dal.Repos.Interfaces.IMakeRepo, System.Nullable`1[System.Int32])" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:43:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='60']"
+""SELECT TOP(1) [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+WHERE [i].[Id] = @__id_0"
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 47.9449ms.
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Edit".
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Edit" executed in 83.9075ms.
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)" in 172.4371ms
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Edit/5 - - - 200 - text/html;+charset=utf-8 205.3261ms
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/jquery-validation/jquery.validate.js?v=JVPrkBw6HvZl_Pj3KKadp_cU_Xt6Ry0fJSuHjPbQK3A - -
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js?v=Wl9UaHxa_kEWNpEQDGCoCVsQaxKHgTSZ9RTA39hf5oI - -
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/jquery-validation/jquery.validate.js"'
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 11.6710ms
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js?v=Wl9UaHxa_kEWNpEQDGCoCVsQaxKHgTSZ9RTA39hf5oI - - - 200 - text/javascript;+charset=UTF-8 41.6807ms
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/jquery-validation/jquery.validate.js"'
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/jquery-validation/jquery.validate.js?v=JVPrkBw6HvZl_Pj3KKadp_cU_Xt6Ry0fJSuHjPbQK3A - - - 200 - text/javascript;+charset=UTF-8 52.6098ms
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 22:43:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 7.1072ms
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 POST https://localhost:5001/Cars/Edit/5 application/x-www-form-urlencoded 251
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Edit\", controller = \"Cars\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Edit(AutoLot.Dal.Repos.Interfaces.IMakeRepo, Int32, AutoLot.Models.Entities.Car)" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("8"ms) [Parameters=["@p6='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (Size = 50), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p7='?' (Size = 8) (DbType = Binary)"], CommandType='Text', CommandTimeout='60']"
+""SET NOCOUNT ON;
+UPDATE [dbo].[Inventory] SET [Color] = @p0, [DateBuilt] = @p1, [IsDrivable] = @p2, [MakeId] = @p3, [PetName] = @p4, [Price] = @p5
+WHERE [Id] = @p6 AND [TimeStamp] = @p7;
+SELECT [Display], [TimeStamp], [ValidFrom], [ValidTo]
+FROM [dbo].[Inventory]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p6;"
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 136.8185ms.
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.RedirectToActionResult
+Message:Executing RedirectResult, redirecting to "/Cars/Index".
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)" in 200.4202ms
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 POST https://localhost:5001/Cars/Edit/5 application/x-www-form-urlencoded 251 - 302 0 - 221.6874ms
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Index - -
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Cars\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1401ms.
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+ORDER BY [i].[PetName]"
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 33.502ms.
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" in 53.9897ms
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Index - - - 200 - text/html;+charset=utf-8 66.8982ms
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 1.7187ms
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 22:43:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 2.8455ms
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Index - -
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Cars\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0799ms.
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+ORDER BY [i].[PetName]"
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 37.7867ms.
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" in 60.6526ms
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Index - - - 200 - text/html;+charset=utf-8 73.7074ms
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 5.1305ms
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 22:43:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 3.9133ms
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Index - -
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Cars\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2274ms.
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+ORDER BY [i].[PetName]"
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 35.8013ms.
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" in 59.0835ms
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Index - - - 200 - text/html;+charset=utf-8 73.4803ms
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 5.2998ms
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 22:43:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 8.4524ms
+in method  at :
+
+[21-11-11 22:57:53 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[21-11-11 22:57:54 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+in method  at :
+
+[21-11-11 22:57:54 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+in method  at :
+
+[21-11-11 22:57:54 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[21-11-11 22:57:54 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[21-11-11 22:57:54 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\"
+in method  at :
+
+[21-11-11 22:57:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+in method  at :
+
+[21-11-11 22:58:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 22:58:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 22:58:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 22:58:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.4846ms.
+in method  at :
+
+[21-11-11 22:58:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:00:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 136825.0696ms
+in method  at :
+
+[21-11-11 23:00:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:00:17 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Home_Index.ExecuteAsync() in D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\Views\Home\Index.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[21-11-11 23:00:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/ - - - 500 - text/html;+charset=utf-8 137452.8707ms
+in method  at :
+
+[21-11-11 23:00:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:00:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 3.9586ms
+in method  at :
+
+[21-11-11 23:00:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[21-11-11 23:00:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+in method  at :
+
+[21-11-11 23:00:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+in method  at :
+
+[21-11-11 23:00:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[21-11-11 23:00:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[21-11-11 23:00:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\"
+in method  at :
+
+[21-11-11 23:00:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+in method  at :
+
+[21-11-11 23:00:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:00:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:00:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:00:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.1579ms.
+in method  at :
+
+[21-11-11 23:00:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:02:10 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[21-11-11 23:02:11 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+in method  at :
+
+[21-11-11 23:02:11 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+in method  at :
+
+[21-11-11 23:02:11 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[21-11-11 23:02:11 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[21-11-11 23:02:11 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\"
+in method  at :
+
+[21-11-11 23:02:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+in method  at :
+
+[21-11-11 23:02:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:02:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:02:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:02:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.7039ms.
+in method  at :
+
+[21-11-11 23:02:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:02:19 Warning]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Model.Validation
+Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+[21-11-11 23:02:19 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Infrastructure
+Message:Entity Framework Core "6.0.0" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.0"' with options: "MaxPoolSize=1024 CommandTimeout=60 "
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 3440.8673ms.
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 3775.2573ms
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4212.9162ms
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 14.0769ms
+in method  at :
+
+[21-11-11 23:02:20 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:02:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 44.0095ms
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Admin/Makes/Index - -
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Makes\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Areas.Admin.Controllers.MakesController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.3472ms.
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 58.0692ms.
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" in 111.5775ms
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:02:24 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Admin/Makes/Index - - - 200 - text/html;+charset=utf-8 144.0050ms
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Edit/5 - -
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Edit\", controller = \"Cars\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Edit(AutoLot.Dal.Repos.Interfaces.IMakeRepo, System.Nullable`1[System.Int32])" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("23"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='60']"
+""SELECT TOP(1) [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+WHERE [i].[Id] = @__id_0"
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 154.4175ms.
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Edit".
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Edit" executed in 135.1293ms.
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)" in 324.2919ms
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Edit/5 - - - 200 - text/html;+charset=utf-8 344.6102ms
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 3.9942ms
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:02:26 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 4.8542ms
+in method  at :
+
+[21-11-11 23:13:07 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[21-11-11 23:13:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+in method  at :
+
+[21-11-11 23:13:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+in method  at :
+
+[21-11-11 23:13:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[21-11-11 23:13:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[21-11-11 23:13:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\"
+in method  at :
+
+[21-11-11 23:13:14 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+in method  at :
+
+[21-11-11 23:13:14 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:13:14 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:13:14 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:13:14 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.1637ms.
+in method  at :
+
+[21-11-11 23:13:14 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:13:17 Warning]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Model.Validation
+Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+[21-11-11 23:13:17 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Infrastructure
+Message:Entity Framework Core "6.0.0" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.0"' with options: "MaxPoolSize=1024 CommandTimeout=60 "
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 3646.1546ms.
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 4044.5582ms
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4582.8896ms
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 23.1980ms
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:13:18 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 17.9081ms
+in method  at :
+
+[21-11-11 23:13:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Index - -
+in method  at :
+
+[21-11-11 23:13:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:13:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Cars\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:13:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:13:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.4579ms.
+in method  at :
+
+[21-11-11 23:13:22 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+ORDER BY [i].[PetName]"
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 249.0592ms.
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" in 289.1145ms
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Index - - - 200 - text/html;+charset=utf-8 324.7939ms
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 2.3797ms
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:13:23 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 7.2781ms
+in method  at :
+
+[21-11-11 23:13:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Details/5 - -
+in method  at :
+
+[21-11-11 23:13:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Details (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:13:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Details\", controller = \"Cars\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Details(System.Nullable`1[System.Int32])" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:13:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Details (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:13:25 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='60']"
+""SELECT TOP(1) [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+WHERE [i].[Id] = @__id_0"
+in method  at :
+
+[21-11-11 23:13:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Details (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 48.1719ms.
+in method  at :
+
+[21-11-11 23:13:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Details".
+in method  at :
+
+[21-11-11 23:14:50 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[21-11-11 23:14:51 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+in method  at :
+
+[21-11-11 23:14:51 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+in method  at :
+
+[21-11-11 23:14:51 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[21-11-11 23:14:51 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[21-11-11 23:14:51 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\"
+in method  at :
+
+[21-11-11 23:14:56 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+in method  at :
+
+[21-11-11 23:14:56 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:14:56 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:14:56 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:14:56 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 6.7443ms.
+in method  at :
+
+[21-11-11 23:14:56 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:14:59 Warning]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Model.Validation
+Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+[21-11-11 23:15:00 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Infrastructure
+Message:Entity Framework Core "6.0.0" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.0"' with options: "MaxPoolSize=1024 CommandTimeout=60 "
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 4691.8038ms.
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 4985.6381ms
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 5347.0735ms
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 20.8691ms
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:15:01 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 35.2726ms
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Index - -
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Cars\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.3517ms.
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+ORDER BY [i].[PetName]"
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 258.6711ms.
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" in 298.4255ms
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Index - - - 200 - text/html;+charset=utf-8 327.6676ms
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 2.8986ms
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:15:05 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 6.0955ms
+in method  at :
+
+[21-11-11 23:15:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Details/5 - -
+in method  at :
+
+[21-11-11 23:15:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Details (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:15:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Details\", controller = \"Cars\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Details(System.Nullable`1[System.Int32])" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:15:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Details (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:15:06 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("17"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='60']"
+""SELECT TOP(1) [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+WHERE [i].[Id] = @__id_0"
+in method  at :
+
+[21-11-11 23:15:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Details (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 45.606ms.
+in method  at :
+
+[21-11-11 23:15:06 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Details".
+in method  at :
+
+[21-11-11 23:19:07 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[21-11-11 23:19:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+in method  at :
+
+[21-11-11 23:19:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+in method  at :
+
+[21-11-11 23:19:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[21-11-11 23:19:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[21-11-11 23:19:08 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab13\AutoLot.Mvc\"
+in method  at :
+
+[21-11-11 23:19:13 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+in method  at :
+
+[21-11-11 23:19:13 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:13 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:19:13 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:19:13 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.1733ms.
+in method  at :
+
+[21-11-11 23:19:13 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:19:15 Warning]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Model.Validation
+Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+[21-11-11 23:19:16 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Infrastructure
+Message:Entity Framework Core "6.0.0" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.0"' with options: "MaxPoolSize=1024 CommandTimeout=60 "
+in method  at :
+
+[21-11-11 23:19:16 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:19:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 3086.1934ms.
+in method  at :
+
+[21-11-11 23:19:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 3365.9381ms
+in method  at :
+
+[21-11-11 23:19:16 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 3745.8362ms
+in method  at :
+
+[21-11-11 23:19:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:19:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 17.8202ms
+in method  at :
+
+[21-11-11 23:19:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:19:17 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 26.1124ms
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Admin/Makes/Index - -
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Makes\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Areas.Admin.Controllers.MakesController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.991ms.
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 42.9381ms.
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" in 75.4278ms
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:21 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Admin/Makes/Index - - - 200 - text/html;+charset=utf-8 92.0342ms
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Admin/Makes/Edit/5 - -
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{area = \"Admin\", action = \"Edit\", controller = \"Makes\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Edit(System.Nullable`1[System.Int32])" on controller "AutoLot.Mvc.Areas.Admin.Controllers.MakesController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("17"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='60']"
+""SELECT TOP(1) [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+WHERE [m].[Id] = @__p_0"
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 59.2984ms.
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Edit".
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Edit" executed in 35.4124ms.
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)" in 123.8978ms
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:25 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Admin/Makes/Edit/5 - - - 200 - text/html;+charset=utf-8 144.9162ms
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 POST https://localhost:5001/Admin/Makes/Edit/5 application/x-www-form-urlencoded 222
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{area = \"Admin\", action = \"Edit\", controller = \"Makes\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Edit(Int32, AutoLot.Models.Entities.Make)" on controller "AutoLot.Mvc.Areas.Admin.Controllers.MakesController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("5"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 50), @p2='?' (Size = 8) (DbType = Binary)"], CommandType='Text', CommandTimeout='60']"
+""SET NOCOUNT ON;
+UPDATE [dbo].[Makes] SET [Name] = @p0
+WHERE [Id] = @p1 AND [TimeStamp] = @p2;
+SELECT [TimeStamp], [ValidFrom], [ValidTo]
+FROM [dbo].[Makes]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p1;"
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 120.447ms.
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.RedirectToActionResult
+Message:Executing RedirectResult, redirecting to "/Admin/Makes/Index".
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)" in 156.6532ms
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 POST https://localhost:5001/Admin/Makes/Edit/5 application/x-www-form-urlencoded 222 - 302 0 - 174.7723ms
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Admin/Makes/Index - -
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Makes\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Areas.Admin.Controllers.MakesController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1055ms.
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 23.636ms.
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" in 43.0035ms
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Admin/Makes/Index - - - 200 - text/html;+charset=utf-8 54.8801ms
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Admin/Makes/Edit/5 - -
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{area = \"Admin\", action = \"Edit\", controller = \"Makes\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Edit(System.Nullable`1[System.Int32])" on controller "AutoLot.Mvc.Areas.Admin.Controllers.MakesController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='60']"
+""SELECT TOP(1) [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+WHERE [m].[Id] = @__p_0"
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 8.1071ms.
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Edit".
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Edit" executed in 4.1627ms.
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)" in 31.9178ms
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Edit (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Admin/Makes/Edit/5 - - - 200 - text/html;+charset=utf-8 44.9671ms
+in method  at :
+
+[21-11-11 23:19:35 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:19:35 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 3.9219ms
+in method  at :
+
+[21-11-11 23:19:38 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Cars/Index - -
+in method  at :
+
+[21-11-11 23:19:38 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:38 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Cars\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[21-11-11 23:19:38 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[21-11-11 23:19:38 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.9034ms.
+in method  at :
+
+[21-11-11 23:19:38 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+ORDER BY [i].[PetName]"
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 172.7155ms.
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)" in 201.1861ms
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Cars/Index - - - 200 - text/html;+charset=utf-8 224.1535ms
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11945 application/javascript;+charset=utf-8 6.6535ms
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - -
+in method  at :
+
+[21-11-11 23:19:39 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/webfonts/fa-solid-900.woff2 - - - 404 0 - 4.6396ms
+in method  at :
+

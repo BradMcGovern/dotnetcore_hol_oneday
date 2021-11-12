@@ -60,10 +60,9 @@ dotnet add AutoLot.Mvc package System.Text.Json --prerelease
 dotnet add AutoLot.Mvc package LigerShark.WebOptimizer.Core
 dotnet add AutoLot.Mvc package Microsoft.Web.LibraryManager.Build
 dotnet add AutoLot.Mvc package Microsoft.EntityFrameworkCore --prerelease 
+dotnet add AutoLot.Mvc package Microsoft.EntityFrameworkCore.Design --prerelease 
 dotnet add AutoLot.Mvc package Microsoft.EntityFrameworkCore.SqlServer --prerelease 
-dotnet add AutoLot.Mvc package Microsoft.EntityFrameworkCore.SqlServer.Design --prerelease 
 dotnet add AutoLot.Mvc package Microsoft.VisualStudio.Web.CodeGeneration.Design --prerelease 
-dotnet add AutoLot.Mvc package Microsoft.VisualStudio.Web.CodeGeneration.Design
 
 dotnet add AutoLot.Mvc reference AutoLot.Models
 dotnet add AutoLot.Mvc reference AutoLot.Dal
