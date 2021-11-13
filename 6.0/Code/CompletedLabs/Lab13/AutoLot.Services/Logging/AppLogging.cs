@@ -24,17 +24,18 @@ public class AppLogging<T> : IAppLogging<T>
         Action<Exception, string, object[]> logAction)
     {
         var list = new List<IDisposable>
-            {
-                LogContext.PushProperty("MemberName", memberName),
-                LogContext.PushProperty("FilePath", sourceFilePath),
-                LogContext.PushProperty("LineNumber", sourceLineNumber),
-            };
-            logAction(ex,message,null);
+        {
+            LogContext.PushProperty("MemberName", memberName),
+            LogContext.PushProperty("FilePath", sourceFilePath),
+            LogContext.PushProperty("LineNumber", sourceLineNumber),
+        };
+        logAction(ex, message, null);
         foreach (var item in list)
         {
             item.Dispose();
         }
     }
+
     internal static void LogWithoutException(string memberName,
         string sourceFilePath,
         int sourceLineNumber,
@@ -42,18 +43,20 @@ public class AppLogging<T> : IAppLogging<T>
         Action<string, object[]> logAction)
     {
         var list = new List<IDisposable>
-            {
-                LogContext.PushProperty("MemberName", memberName),
-                LogContext.PushProperty("FilePath", sourceFilePath),
-                LogContext.PushProperty("LineNumber", sourceLineNumber),
-            };
-            logAction(message, null);
+        {
+            LogContext.PushProperty("MemberName", memberName),
+            LogContext.PushProperty("FilePath", sourceFilePath),
+            LogContext.PushProperty("LineNumber", sourceLineNumber),
+        };
+        logAction(message, null);
         foreach (var item in list)
         {
             item.Dispose();
         }
     }
-    public void LogAppError(Exception exception, string message,
+
+    public void LogAppError(Exception exception,
+        string message,
         [CallerMemberName] string memberName = "",
         [CallerFilePath] string sourceFilePath = "",
         [CallerLineNumber] int sourceLineNumber = 0)
@@ -69,7 +72,8 @@ public class AppLogging<T> : IAppLogging<T>
         LogWithoutException(memberName, sourceFilePath, sourceLineNumber, message, _logger.LogError);
     }
 
-    public void LogAppCritical(Exception exception, string message,
+    public void LogAppCritical(Exception exception,
+        string message,
         [CallerMemberName] string memberName = "",
         [CallerFilePath] string sourceFilePath = "",
         [CallerLineNumber] int sourceLineNumber = 0)

@@ -1,23 +1,26 @@
-﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using AutoLot.Mvc.Models;
+﻿namespace AutoLot.Mvc.Controllers;
 
-namespace AutoLot.Mvc.Controllers;
-
+[Route("[controller]/[action]")]
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly IAppLogging<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IAppLogging<HomeController> logger)
     {
         _logger = logger;
     }
 
-    public IActionResult Index()
+    [Route("/")]
+    [Route("/[controller]")]
+    [Route("/[controller]/[action]")]
+    [HttpGet]
+    public IActionResult Index([FromServices]IOptionsMonitor<DealerInfo> dealerOptionsMonitor)
     {
-        return View();
+        //_logger.LogAppError("Test error");
+        return View(dealerOptionsMonitor.CurrentValue);
     }
 
+    [HttpGet]
     public IActionResult Privacy()
     {
         return View();
@@ -27,5 +30,21 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    [HttpGet]
+    public IActionResult GrantConsent()
+    {
+        HttpContext.Features.Get<ITrackingConsentFeature>().GrantConsent();
+        return RedirectToAction(nameof(Index), nameof(HomeController).RemoveController(),
+            new {area = ""});
+    }
+
+    [HttpGet]
+    public IActionResult WithdrawConsent()
+    {
+        HttpContext.Features.Get<ITrackingConsentFeature>().WithdrawConsent();
+        return RedirectToAction(nameof(Index), nameof(HomeController).RemoveController(),
+            new {area = ""});
     }
 }

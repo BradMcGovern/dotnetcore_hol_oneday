@@ -43,7 +43,6 @@ public static class LoggingConfiguration
         var tableName = settings.MSSqlServer.TableName;
         var schema = settings.MSSqlServer.Schema;
         string restrictedToMinimumLevel = settings.General.RestrictedToMinimumLevel;
-        //config["Logging:MSSqlServer:restrictedToMinimumLevel"].ToString();
         if (!Enum.TryParse<LogEventLevel>(restrictedToMinimumLevel, out var logLevel))
         {
             logLevel = LogEventLevel.Debug;

@@ -9,10 +9,9 @@ namespace AutoLot.Mvc.TagHelpers;
 
 public class ItemListTagHelper : ItemLinkTagHelperBase
 {
-    public ItemListTagHelper(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory)
-        : base(contextAccessor, urlHelperFactory)
+    public ItemListTagHelper(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory) : base(contextAccessor, urlHelperFactory)
     {
-        ActionName = "Index";
+        ActionName = nameof(CarsController.Index);
     }
 
     public override void Process(TagHelperContext context, TagHelperOutput output)

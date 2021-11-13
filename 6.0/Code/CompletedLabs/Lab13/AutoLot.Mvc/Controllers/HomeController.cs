@@ -20,9 +20,10 @@ public class HomeController : Controller
     [Route("/[controller]")]
     [Route("/[controller]/[action]")]
     [HttpGet]
-    public IActionResult Index([FromServices]IOptionsMonitor<DealerInfo> dealerOptions)
+    public IActionResult Index([FromServices] IOptionsMonitor<DealerInfo> dealerOptionsMonitor)
     {
-        return View(dealerOptions.CurrentValue);
+        //_logger.LogAppError("Test error");
+        return View(dealerOptionsMonitor.CurrentValue);
     }
 
     [HttpGet]
@@ -44,17 +45,17 @@ public class HomeController : Controller
             new {area = ""});
     }
     [HttpGet]
-    public IActionResult RazorSyntax([FromServices] ICarRepo carRepo)
-    {
-        var car = carRepo.Find(1);
-        return View(car);
-    }
-
-    [HttpGet]
     public IActionResult WithdrawConsent()
     {
         HttpContext.Features.Get<ITrackingConsentFeature>().WithdrawConsent();
         return RedirectToAction(nameof(Index), nameof(HomeController).RemoveController(),
             new {area = ""});
     }
+    [HttpGet]
+    public IActionResult RazorSyntax([FromServices] ICarRepo carRepo)
+    {
+        var car = carRepo.Find(1);
+        return View(car);
+    }
+
 }

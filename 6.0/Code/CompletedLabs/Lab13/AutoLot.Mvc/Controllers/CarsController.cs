@@ -7,115 +7,22 @@
 
 namespace AutoLot.Mvc.Controllers;
 
-[Route("[controller]/[action]")]
-public class CarsController : Controller
+public class CarsController : BaseCrudController<Car,CarsController>
 {
-    private readonly ICarRepo _repo;
-    private readonly IAppLogging<CarsController> _logging;
-    public CarsController(ICarRepo repo, IAppLogging<CarsController> logging)
+    private readonly IMakeRepo _makeRepo;
+    public CarsController(IAppLogging<CarsController> logging,ICarRepo repo, IMakeRepo makeRepo) :base(logging,repo)
     {
-        _repo = repo;
-        _logging = logging;
-        //_logging.LogAppError("Test error");
+        _makeRepo = makeRepo;
     }
-    internal SelectList GetMakes(IMakeRepo makeRepo)
-        => new SelectList(makeRepo.GetAll(), nameof(Make.Id), nameof(Make.Name));
+    protected override SelectList GetLookupValues()
+            => new SelectList(_makeRepo.GetAll(), nameof(Make.Id), nameof(Make.Name));
 
-    internal Car GetOneCar(int? id) 
-        => id == null ? null : _repo.Find(id.Value);
-
-    [Route("/[controller]")]
-    [Route("/[controller]/[action]")]
-    public IActionResult Index() 
-        => View(_repo.GetAllIgnoreQueryFilters());
 
     [HttpGet("{makeId}/{makeName}")]
     public IActionResult ByMake(int makeId, string makeName)
     {
         ViewBag.MakeName = makeName;
-        return View(_repo.GetAllBy(makeId));
+        return View(((ICarRepo)BaseRepoInstance).GetAllBy(makeId));
     }
 
-    [HttpGet("{id?}")]
-    public IActionResult Details(int? id)
-    {
-        if (!id.HasValue)
-        {
-            return BadRequest();
-        }
-        var car = GetOneCar(id);
-        if (car == null)
-        {
-            return NotFound();
-        }
-        return View(car);
-    }
-
-    [HttpGet]
-    public IActionResult Create([FromServices] IMakeRepo makeRepo)
-    {
-        ViewData["MakeId"] = GetMakes(makeRepo);
-        return View();
-    }
-
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Create([FromServices] IMakeRepo makeRepo, Car car)
-    {
-        if (ModelState.IsValid)
-        {
-            _repo.Add(car);
-            return RedirectToAction(nameof(Index));
-        }
-        ViewData["MakeId"] = GetMakes(makeRepo);
-        return View(car);
-    }
-
-    [HttpGet("{id?}")]
-    public IActionResult Edit([FromServices] IMakeRepo makeRepo, int? id)
-    {
-        var car = GetOneCar(id);
-        if (car == null)
-        {
-            return NotFound();
-        }
-        ViewData["MakeId"] = GetMakes(makeRepo);
-        return View(car);
-    }
-
-    [HttpPost("{id}")]
-    [ValidateAntiForgeryToken]
-    public IActionResult Edit([FromServices] IMakeRepo makeRepo, int id, Car car)
-    {
-        if (id != car.Id)
-        {
-            return BadRequest();
-        }
-        if (ModelState.IsValid)
-        {
-            _repo.Update(car);
-            return RedirectToAction(nameof(Index));
-        }
-        ViewData["MakeId"] = GetMakes(makeRepo);
-        return View(car);
-    }
-
-    [HttpGet("{id?}")]
-    public IActionResult Delete(int? id)
-    {
-        var car = GetOneCar(id);
-        if (car == null)
-        {
-            return NotFound();
-        }
-        return View(car);
-    }
-
-    [HttpPost("{id}")]
-    [ValidateAntiForgeryToken]
-    public IActionResult Delete(int id, Car car)
-    {
-        _repo.Delete(car);
-        return RedirectToAction(nameof(Index));
-    }
 }

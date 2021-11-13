@@ -11,8 +11,8 @@ global using AutoLot.Mvc.TagHelpers.Base;
 
 global using AutoLot.Services.Logging.Configuration;
 global using AutoLot.Services.Logging.Interfaces;
-global using AutoLot.Services.ViewModels;
 global using AutoLot.Services.Utilities;
+global using AutoLot.Services.ViewModels;
 
 global using Microsoft.AspNetCore.Http.Features;
 global using Microsoft.AspNetCore.Mvc;

@@ -15,20 +15,30 @@ namespace AutoLot.Mvc.ViewComponents;
 public class MenuViewComponent : ViewComponent
 {
     private readonly IMakeRepo _makeRepo;
-
     public MenuViewComponent(IMakeRepo makeRepo)
     {
         _makeRepo = makeRepo;
     }
-
-    public IViewComponentResult Invoke()
+    //public IViewComponentResult Invoke()
+    //{
+    //    var makes = _makeRepo.GetAll().ToList();
+    //    if (!makes.Any())
+    //    {
+    //        return new ContentViewComponentResult("Unable to get the makes");
+    //    }
+    //    return View("MenuView", makes);
+    //}
+    public async Task<IViewComponentResult> InvokeAsync()
     {
-        var makes = _makeRepo.GetAll().ToList();
-        if (!makes.Any())
+        return await Task.Run<IViewComponentResult>(() =>
         {
-            return new ContentViewComponentResult("Unable to get the makes");
-        }
+            var makes = _makeRepo.GetAll().ToList();
+            if (!makes.Any())
+            {
+                return new ContentViewComponentResult("Unable to get the makes");
+            }
 
-        return View("MenuView", makes);
+            return View("MenuView", makes);
+        });
     }
 }

@@ -9,11 +9,9 @@ namespace AutoLot.Mvc.TagHelpers;
 
 public class ItemDeleteTagHelper : ItemLinkTagHelperBase
 {
-
-    public ItemDeleteTagHelper(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory)
-        : base(contextAccessor, urlHelperFactory)
+    public ItemDeleteTagHelper(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory) : base(contextAccessor, urlHelperFactory)
     {
-        ActionName = "Delete";
+        ActionName = nameof(CarsController.Delete); 
     }
 
     public override void Process(TagHelperContext context, TagHelperOutput output)

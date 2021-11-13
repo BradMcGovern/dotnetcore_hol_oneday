@@ -7,7 +7,7 @@
 
 namespace AutoLot.Dal.EfStructures;
 
-public sealed class ApplicationDbContext :DbContext
+public sealed class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)

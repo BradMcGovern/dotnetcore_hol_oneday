@@ -10,10 +10,9 @@ namespace AutoLot.Mvc.TagHelpers;
 
 public class ItemDetailsTagHelper : ItemLinkTagHelperBase
 {
-    public ItemDetailsTagHelper(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory)
-        : base(contextAccessor, urlHelperFactory)
+    public ItemDetailsTagHelper(IActionContextAccessor contextAccessor, IUrlHelperFactory urlHelperFactory) : base(contextAccessor, urlHelperFactory)
     {
-        ActionName = "Details";
+        ActionName = nameof(CarsController.Details);
     }
 
     public override void Process(TagHelperContext context, TagHelperOutput output)

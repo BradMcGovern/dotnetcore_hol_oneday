@@ -1,7 +1,4 @@
-﻿@using Microsoft.AspNetCore.Hosting
-@using Microsoft.Extensions.Hosting
-@inject IWebHostEnvironment Env
-
+﻿@inject IWebHostEnvironment _env
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +17,10 @@
 
 <footer class="border-top footer text-muted">
     <div class="container">
-            &copy; 2021 - AutoLot.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        &copy; 2021 - AutoLot.Mvc - @_env.EnvironmentName - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
 </footer>
 <partial name="Partials/_JavaScriptFiles"/>
-@RenderSection("Scripts", required: false)
+@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

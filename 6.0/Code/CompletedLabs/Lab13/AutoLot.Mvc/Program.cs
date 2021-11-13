@@ -10,7 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.ConfigureSerilog();
 builder.Services.RegisterLoggingInterfaces();
 
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -31,27 +30,31 @@ builder.Services.AddDbContextPool<ApplicationDbContext>(
     options => options.UseSqlServer(connectionString,
         sqlOptions => sqlOptions.EnableRetryOnFailure().CommandTimeout(60)));
 
-builder.Services.AddScoped(typeof(IAppLogging<>), typeof(AppLogging<>));
+builder.Services.AddScoped<ICarDriverRepo, CarDriverRepo>();
 builder.Services.AddScoped<ICarRepo, CarRepo>();
 builder.Services.AddScoped<ICreditRiskRepo, CreditRiskRepo>();
+builder.Services.AddScoped<ICustomerOrderViewModelRepo, CustomerOrderViewModelRepo>();
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
+builder.Services.AddScoped<IDriverRepo, DriverRepo>();
 builder.Services.AddScoped<IMakeRepo, MakeRepo>();
 builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+builder.Services.AddScoped<IRadioRepo, RadioRepo>();
 builder.Services.Configure<DealerInfo>(builder.Configuration.GetSection(nameof(DealerInfo)));
 builder.Services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
 builder.Services.AddHttpContextAccessor();
 
 if (builder.Environment.IsDevelopment() || builder.Environment.IsEnvironment("Local"))
 {
-    //services.AddWebOptimizer(false,false);
+    //builder.Services.AddWebOptimizer(false,false);
     builder.Services.AddWebOptimizer(options =>
     {
         options.MinifyCssFiles(); //Minifies all CSS files
         //options.MinifyJsFiles(); //Minifies all JS files
-        //    options.MinifyJsFiles("js/site.js");
+        //options.MinifyJsFiles("js/site.js");
         options.MinifyJsFiles("lib/**/*.js");
-        //    //options.AddJavaScriptBundle("js/validations/validationCode.js", "js/validations/**/*.js");
-        //    //options.AddJavaScriptBundle("js/validations/validationCode.js", "js/validations/validators.js", "js/validations/errorFormatting.js");
+        //options.AddJavaScriptBundle("js/validations/validationCode.js", "js/validations/**/*.js");
+        //options.AddJavaScriptBundle("js/validations/validationCode.js", 
+        //  "js/validations/validators.js", "js/validations/errorFormatting.js");
     });
 }
 else
@@ -62,14 +65,15 @@ else
         //options.MinifyJsFiles(); //Minifies all JS files
         options.MinifyJsFiles("js/site.js");
         options.AddJavaScriptBundle("js/validations/validationCode.js", "js/validations/**/*.js");
-        //options.AddJavaScriptBundle("js/validations/validationCode.js", "js/validations/validators.js", "js/validations/errorFormatting.js");
+        //options.AddJavaScriptBundle("js/validations/validationCode.js", 
+        //  "js/validations/validators.js", "js/validations/errorFormatting.js");
     });
 }
 
 
-
 var app = builder.Build();
 
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -96,5 +100,8 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllers();
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
