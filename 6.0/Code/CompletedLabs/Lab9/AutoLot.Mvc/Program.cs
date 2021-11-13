@@ -1,3 +1,10 @@
+// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Mvc - Program.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
 var builder = WebApplication.CreateBuilder(args);
 //Configure logging
 builder.ConfigureSerilog();

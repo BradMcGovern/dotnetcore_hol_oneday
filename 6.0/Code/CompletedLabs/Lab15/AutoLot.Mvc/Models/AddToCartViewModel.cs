@@ -1,4 +1,10 @@
-﻿
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Mvc - AddToCartViewModel.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
 using System.ComponentModel;
 
 namespace AutoLot.Mvc.Models;

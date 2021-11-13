@@ -1,4 +1,11 @@
-﻿namespace AutoLot.Services.Logging;
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Services - AppLogging.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
+namespace AutoLot.Services.Logging;
 
 public class AppLogging<T> : IAppLogging<T>
 {

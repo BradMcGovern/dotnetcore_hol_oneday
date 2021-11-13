@@ -2,7 +2,7 @@
 // ==================================
 // AutoLot - AutoLot.Models - GlobalUsings.cs
 // All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/11/06
+// http://www.skimedic.com 2021/11/13
 // ==================================
 
 global using AutoLot.Models.Entities.Base;

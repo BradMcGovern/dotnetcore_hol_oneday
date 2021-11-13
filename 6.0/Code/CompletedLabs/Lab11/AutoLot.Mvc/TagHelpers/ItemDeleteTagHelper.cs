@@ -1,4 +1,11 @@
-﻿namespace AutoLot.Mvc.TagHelpers;
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Mvc - ItemDeleteTagHelper.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
+namespace AutoLot.Mvc.TagHelpers;
 
 public class ItemDeleteTagHelper : ItemLinkTagHelperBase
 {

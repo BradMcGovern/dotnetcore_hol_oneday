@@ -1,4 +1,11 @@
-﻿namespace AutoLot.Mvc.Controllers;
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Mvc - HomeController.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
+namespace AutoLot.Mvc.Controllers;
 
 [Route("[controller]/[action]")]
 public class HomeController : Controller

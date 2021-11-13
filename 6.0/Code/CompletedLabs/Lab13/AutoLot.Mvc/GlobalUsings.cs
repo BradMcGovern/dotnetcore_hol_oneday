@@ -1,4 +1,11 @@
-﻿global using AutoLot.Dal.EfStructures;
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Mvc - GlobalUsings.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
+global using AutoLot.Dal.EfStructures;
 global using AutoLot.Dal.Initialization;
 global using AutoLot.Dal.Repos;
 global using AutoLot.Dal.Repos.Base;

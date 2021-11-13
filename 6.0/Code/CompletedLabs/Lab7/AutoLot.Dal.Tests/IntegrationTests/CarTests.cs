@@ -1,4 +1,11 @@
-﻿namespace AutoLot.Dal.Tests.IntegrationTests;
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Dal.Tests - CarTests.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
+namespace AutoLot.Dal.Tests.IntegrationTests;
 
 [Collection("Integration Tests")]
 public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture>

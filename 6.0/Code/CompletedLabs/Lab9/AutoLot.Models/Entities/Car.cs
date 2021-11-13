@@ -2,7 +2,7 @@
 // ==================================
 // AutoLot - AutoLot.Models - Car.cs
 // All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/11/06
+// http://www.skimedic.com 2021/11/13
 // ==================================
 
 namespace AutoLot.Models.Entities;

@@ -1,3 +1,10 @@
+// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Dal.Tests - EnsureAutoLotDatabaseTestFixture.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
 namespace AutoLot.Dal.Tests.Base;
 
 public sealed class EnsureAutoLotDatabaseTestFixture : IDisposable

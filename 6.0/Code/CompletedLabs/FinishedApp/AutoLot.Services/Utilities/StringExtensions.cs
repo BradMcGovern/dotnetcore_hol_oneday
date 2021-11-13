@@ -2,7 +2,7 @@
 // ==================================
 // AutoLot - AutoLot.Services - StringExtensions.cs
 // All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/08/11
+// http://www.skimedic.com 2021/11/13
 // ==================================
 
 namespace AutoLot.Services.Utilities;

@@ -2,7 +2,7 @@
 // ==================================
 // AutoLot - AutoLot.Dal - LibraryAttributes.cs
 // All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/08/11
+// http://www.skimedic.com 2021/11/13
 // ==================================
 
 using System.Runtime.CompilerServices;

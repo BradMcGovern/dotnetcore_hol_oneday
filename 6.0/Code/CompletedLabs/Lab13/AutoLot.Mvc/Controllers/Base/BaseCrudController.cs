@@ -1,4 +1,11 @@
-﻿namespace AutoLot.Mvc.Controllers.Base;
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Mvc - BaseCrudController.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
+namespace AutoLot.Mvc.Controllers.Base;
 
 [Route("[controller]/[action]")]
 public abstract class BaseCrudController<TEntity, TController> : Controller where TEntity : BaseEntity, new()

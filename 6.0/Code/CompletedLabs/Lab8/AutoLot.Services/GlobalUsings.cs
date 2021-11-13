@@ -1,4 +1,11 @@
-﻿global using AutoLot.Dal.Repos;
+﻿// Copyright Information
+// ==================================
+// AutoLot - AutoLot.Services - GlobalUsings.cs
+// All samples copyright Philip Japikse
+// http://www.skimedic.com 2021/11/13
+// ==================================
+
+global using AutoLot.Dal.Repos;
 global using AutoLot.Dal.Repos.Interfaces;
 
 global using AutoLot.Services.Logging;
