@@ -3,12 +3,12 @@
 public class CarsController : BaseCrudController<Car,CarsController>
 {
     private readonly IMakeRepo _makeRepo;
-    public CarsController(IAppLogging<CarsController> logging,ICarRepo repo, IMakeRepo makeRepo) :base(logging,repo)
+    public CarsController(IAppLogging<CarsController> logging, ICarRepo repo, IMakeRepo makeRepo) :base(logging,repo)
     {
         _makeRepo = makeRepo;
     }
     protected override SelectList GetLookupValues()
-            => new SelectList(_makeRepo.GetAll(), nameof(Make.Id), nameof(Make.Name));
+        => new SelectList(_makeRepo.GetAll(), nameof(Make.Id), nameof(Make.Name));
 
 
     [HttpGet("{makeId}/{makeName}")]
@@ -17,5 +17,4 @@ public class CarsController : BaseCrudController<Car,CarsController>
         ViewBag.MakeName = makeName;
         return View(((ICarRepo)BaseRepoInstance).GetAllBy(makeId));
     }
-
 }

@@ -1,10 +1,4 @@
-﻿// Copyright Information
-// ==================================
-// AutoLot - AutoLot.Mvc - HomeController.cs
-// All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/08/11
-// ==================================
-namespace AutoLot.Mvc.Controllers;
+﻿namespace AutoLot.Mvc.Controllers;
 
 [Route("[controller]/[action]")]
 public class HomeController : Controller
@@ -20,7 +14,7 @@ public class HomeController : Controller
     [Route("/[controller]")]
     [Route("/[controller]/[action]")]
     [HttpGet]
-    public IActionResult Index([FromServices] IOptionsMonitor<DealerInfo> dealerOptionsMonitor)
+    public IActionResult Index([FromServices]IOptionsMonitor<DealerInfo> dealerOptionsMonitor)
     {
         //_logger.LogAppError("Test error");
         return View(dealerOptionsMonitor.CurrentValue);
@@ -37,6 +31,7 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
     [HttpGet]
     public IActionResult GrantConsent()
     {
@@ -44,6 +39,7 @@ public class HomeController : Controller
         return RedirectToAction(nameof(Index), nameof(HomeController).RemoveController(),
             new {area = ""});
     }
+
     [HttpGet]
     public IActionResult WithdrawConsent()
     {
@@ -57,5 +53,4 @@ public class HomeController : Controller
         var car = carRepo.Find(1);
         return View(car);
     }
-
 }

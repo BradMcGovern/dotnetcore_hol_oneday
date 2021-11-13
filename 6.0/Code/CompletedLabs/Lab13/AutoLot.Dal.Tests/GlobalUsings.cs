@@ -5,8 +5,6 @@
 // http://www.skimedic.com 2021/11/06
 // ==================================
 
-global using System.Data;
-global using System.Linq.Expressions;
 
 
 global using AutoLot.Dal.EfStructures;
@@ -27,6 +25,8 @@ global using Microsoft.EntityFrameworkCore.Query;
 
 global using Microsoft.Extensions.Configuration;
 
+global using System.Data;
+global using System.Linq.Expressions;
 global using Xunit;
 global using Xunit.Abstractions;
 

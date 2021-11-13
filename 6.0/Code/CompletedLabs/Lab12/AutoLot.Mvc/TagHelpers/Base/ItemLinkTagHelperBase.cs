@@ -3,7 +3,7 @@
 public abstract class ItemLinkTagHelperBase : TagHelper
 {
     protected readonly IUrlHelper UrlHelper;
-    private string _controllerName;
+    private readonly string _controllerName;
     public int? ItemId { get; set; }
     protected string ActionName { get; set; }
 

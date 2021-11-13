@@ -3,6 +3,7 @@
     var dealerInfo = _dealerInfoMonitor.CurrentValue;
     var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
     var showBanner = !consentFeature?.CanTrack ?? false;
+
 }
 <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container-fluid">
@@ -11,7 +12,7 @@
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between flex-sm-row-reverse">
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown">Inventory <i class="fa fa-car"></i></a>
@@ -35,9 +36,6 @@
                         <a class="nav-link text-dark" asp-controller="Home" asp-action="WithdrawConsent" title="Revoke Cookie Policy">Revoke Cookie Policy <i class="fas fa-cookie"></i></a>
                     </li>
                 }
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="Makes" asp-action="Index" title="Makes Admin">Makes Admin<i class="fas fa-cog"></i></a>
-                </li>
 
             </ul>
         </div>
