@@ -21,7 +21,8 @@ public class HomeController : Controller
     [Route("/[controller]")]
     [Route("/[controller]/[action]")]
     [HttpGet]
-    public IActionResult Index([FromServices] IOptionsMonitor<DealerInfo> dealerOptionsMonitor)
+    public IActionResult Index(
+        [FromServices] IOptionsMonitor<DealerInfo> dealerOptionsMonitor)
     {
         //_logger.LogAppError("Test error");
         return View(dealerOptionsMonitor.CurrentValue);
