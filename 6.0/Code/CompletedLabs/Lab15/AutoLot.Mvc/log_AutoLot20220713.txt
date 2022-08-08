@@ -1,0 +1,275 @@
+[22-07-13 22:06:29 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[22-07-13 22:06:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:7100"
+in method  at :
+
+[22-07-13 22:06:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5039"
+in method  at :
+
+[22-07-13 22:06:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[22-07-13 22:06:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[22-07-13 22:06:30 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\"
+in method  at :
+
+[22-07-13 22:06:32 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/ - -
+in method  at :
+
+[22-07-13 22:06:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[22-07-13 22:06:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[22-07-13 22:06:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[22-07-13 22:06:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.4178ms.
+in method  at :
+
+[22-07-13 22:06:33 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[22-07-13 22:06:35 Warning]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Model.Validation
+Message:The 'bool' property '"IsDrivable"' on entity type '"Car"' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+in method  at :
+
+[22-07-13 22:06:35 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Infrastructure
+Message:Entity Framework Core "6.0.5" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.5"' with options: "MaxPoolSize=1024 CommandTimeout=60 "
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 3144.6158ms.
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 3351.9326ms
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/ - - - 200 - text/html;+charset=utf-8 3706.7301ms
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/lib/bootstrap/css/bootstrap.css?v=o-AsfCHj7A1M5Xgm1kJmZiGEIvMQEzQqrXz2072Gkkg - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/lib/font-awesome/css/all.css?v=DLjMP-5CdeGCI2qxnDquVSdPQ6oP_enAUQ2NWfz45dw - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/css/site.css?v=UF4fVqH9a3h2EtudTAD3ANzxVqbenQgupDkinT1UnpM - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/bootstrap/css/bootstrap.css"'
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/lib/jquery/jquery.js?v=H-K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/lib/bootstrap/js/bootstrap.bundle.js?v=htsAUOIgN8xkootpQUzmvaCbQo6x2PNMTD7kLWI6yYQ - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/font-awesome/css/all.css"'
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/AutoLot.Mvc.styles.css"'
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/css/site.css"'
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/bootstrap/js/bootstrap.bundle.js"'
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/jquery/jquery.js"'
+in method  at :
+
+[22-07-13 22:06:36 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/js/site.js"'
+in method  at :
+
+[22-07-13 22:06:36 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.IO.FileNotFoundException: Could not find file 'D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'.
+File name: 'D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo.CreateReadStream()
+   at WebOptimizer.Asset.LoadFileContentAsync(IFileProvider fileProvider, AssetContext config, String sourceFile)
+   at WebOptimizer.Asset.ExecuteAsync(HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetBuilder.BuildAsync(IAsset asset, HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetMiddleware.HandleAssetAsync(HttpContext context, IAsset asset, WebOptimizerOptions options)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 374.1394ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 314.9501ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - - - 500 - text/plain;+charset=utf-8 545.4341ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/css/site.css"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/css/site.css?v=UF4fVqH9a3h2EtudTAD3ANzxVqbenQgupDkinT1UnpM - - - 200 - text/css;+charset=UTF-8 675.3757ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\js\site.js"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 693.9593ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/font-awesome/css/all.css"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/lib/font-awesome/css/all.css?v=DLjMP-5CdeGCI2qxnDquVSdPQ6oP_enAUQ2NWfz45dw - - - 200 - text/css;+charset=UTF-8 779.5724ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/bootstrap/css/bootstrap.css"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/lib/bootstrap/css/bootstrap.css?v=o-AsfCHj7A1M5Xgm1kJmZiGEIvMQEzQqrXz2072Gkkg - - - 200 - text/css;+charset=UTF-8 913.6591ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/lib/font-awesome/webfonts/fa-solid-900.woff2?v=Nv4m_M5XB10Uf1di4uExIkrdb6g - -
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/lib/font-awesome/webfonts/fa-solid-900.woff2"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\lib\font-awesome\webfonts\fa-solid-900.woff2"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/lib/font-awesome/webfonts/fa-solid-900.woff2?v=Nv4m_M5XB10Uf1di4uExIkrdb6g - - - 200 78268 font/woff2 33.8316ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/bootstrap/js/bootstrap.bundle.js"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/jquery/jquery.js"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/lib/bootstrap/js/bootstrap.bundle.js?v=htsAUOIgN8xkootpQUzmvaCbQo6x2PNMTD7kLWI6yYQ - - - 200 - text/javascript;+charset=UTF-8 1130.3818ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/lib/jquery/jquery.js?v=H-K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk - - - 200 - text/javascript;+charset=UTF-8 1144.0260ms
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/favicon.ico - -
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\favicon.ico"'
+in method  at :
+
+[22-07-13 22:06:37 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/favicon.ico - - - 200 5430 image/x-icon 23.9989ms
+in method  at :
+
+[22-07-13 22:06:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7100/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - -
+in method  at :
+
+[22-07-13 22:06:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/AutoLot.Mvc.styles.css"'
+in method  at :
+
+[22-07-13 22:06:45 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.IO.FileNotFoundException: Could not find file 'D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'.
+File name: 'D:\Projects\dotnetcore_hol_oneday\6.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo.CreateReadStream()
+   at WebOptimizer.Asset.LoadFileContentAsync(IFileProvider fileProvider, AssetContext config, String sourceFile)
+   at WebOptimizer.Asset.ExecuteAsync(HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetBuilder.BuildAsync(IAsset asset, HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetMiddleware.HandleAssetAsync(HttpContext context, IAsset asset, WebOptimizerOptions options)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[22-07-13 22:06:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7100/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - - - 500 - text/plain;+charset=utf-8 236.7428ms
+in method  at :
+
