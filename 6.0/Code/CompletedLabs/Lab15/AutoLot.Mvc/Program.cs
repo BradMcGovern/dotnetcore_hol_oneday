@@ -6,6 +6,8 @@
 // ==================================
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
+//used to be ConfiguresServices()
 //Configure logging
 builder.ConfigureSerilog();
 builder.Services.RegisterLoggingInterfaces();
@@ -75,6 +77,7 @@ else
 
 var app = builder.Build();
 
+//used to be Configure()
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

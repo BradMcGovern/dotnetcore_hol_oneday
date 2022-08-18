@@ -19,4 +19,5 @@ public class CarDriver : BaseEntity
     public int CarId { get; set; }
     [ForeignKey(nameof(CarId))]
     public Car CarNavigation { get; set; }
+
 }

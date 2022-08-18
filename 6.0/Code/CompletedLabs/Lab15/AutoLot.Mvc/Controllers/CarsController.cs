@@ -10,7 +10,10 @@ namespace AutoLot.Mvc.Controllers;
 public class CarsController : BaseCrudController<Car,CarsController>
 {
     private readonly IMakeRepo _makeRepo;
-    public CarsController(IAppLogging<CarsController> logging,ICarRepo repo, IMakeRepo makeRepo) :base(logging,repo)
+    public CarsController(
+        IAppLogging<CarsController> logging,
+        ICarRepo repo, 
+        IMakeRepo makeRepo) :base(logging,repo)
     {
         _makeRepo = makeRepo;
     }
@@ -25,4 +28,9 @@ public class CarsController : BaseCrudController<Car,CarsController>
         return View(((ICarRepo)BaseRepoInstance).GetAllBy(makeId));
     }
 
+    //[HttpGet]
+    //public IActionResult Foo()
+    //{
+    //    return new OkObjectResult(5);
+    //}
 }
