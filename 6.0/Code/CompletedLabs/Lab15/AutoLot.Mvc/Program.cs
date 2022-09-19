@@ -41,8 +41,7 @@ builder.Services.AddScoped<IDriverRepo, DriverRepo>();
 builder.Services.AddScoped<IMakeRepo, MakeRepo>();
 builder.Services.AddScoped<IOrderRepo, OrderRepo>();
 builder.Services.AddScoped<IRadioRepo, RadioRepo>();
-builder.Services.Configure<DealerInfo>(
-    builder.Configuration.GetSection(nameof(DealerInfo)));
+builder.Services.Configure<DealerInfo>(builder.Configuration.GetSection(nameof(DealerInfo)));
 builder.Services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
 builder.Services.AddHttpContextAccessor();
 

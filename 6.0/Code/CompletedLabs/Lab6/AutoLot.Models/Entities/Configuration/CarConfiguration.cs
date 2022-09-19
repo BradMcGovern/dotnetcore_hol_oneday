@@ -58,6 +58,10 @@ public class CarConfiguration : IEntityTypeConfiguration<Car>
                    .HasForeignKey(nameof(CarDriver.CarId))
                    .HasConstraintName("FK_InventoryDriver_Inventory_InventoryId")
                    .OnDelete(DeleteBehavior.ClientCascade),
-        j => { j.HasKey(cd => new { cd.CarId, cd.DriverId }); });
+               j =>
+               {
+                   j.HasKey(x => x.Id);
+                   j.HasIndex(cd => new { cd.CarId, cd.DriverId }).IsUnique(true);
+               });
     }
 }

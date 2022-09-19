@@ -17,7 +17,7 @@ namespace AutoLot.Dal.EfStructures.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.0-rc.2.21480.5")
+                .HasAnnotation("ProductVersion", "6.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -97,18 +97,18 @@ namespace AutoLot.Dal.EfStructures.Migrations
 
             modelBuilder.Entity("AutoLot.Models.Entities.CarDriver", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
                     b.Property<int>("CarId")
                         .HasColumnType("int")
                         .HasColumnName("InventoryId");
 
                     b.Property<int>("DriverId")
                         .HasColumnType("int");
-
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<byte[]>("TimeStamp")
                         .IsConcurrencyToken()
@@ -125,9 +125,12 @@ namespace AutoLot.Dal.EfStructures.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("ValidTo");
 
-                    b.HasKey("CarId", "DriverId");
+                    b.HasKey("Id");
 
                     b.HasIndex("DriverId");
+
+                    b.HasIndex("CarId", "DriverId")
+                        .IsUnique();
 
                     b.ToTable("InventoryToDrivers", "dbo");
 
@@ -529,7 +532,7 @@ namespace AutoLot.Dal.EfStructures.Migrations
 
                             b1.HasKey("CreditRiskId");
 
-                            b1.ToTable("CreditRisks");
+                            b1.ToTable("CreditRisks", "dbo");
 
                             b1.WithOwner()
                                 .HasForeignKey("CreditRiskId");
@@ -568,7 +571,7 @@ namespace AutoLot.Dal.EfStructures.Migrations
 
                             b1.HasKey("CustomerId");
 
-                            b1.ToTable("Customers");
+                            b1.ToTable("Customers", "dbo");
 
                             b1.WithOwner()
                                 .HasForeignKey("CustomerId");
@@ -605,7 +608,7 @@ namespace AutoLot.Dal.EfStructures.Migrations
 
                             b1.HasKey("DriverId");
 
-                            b1.ToTable("Drivers");
+                            b1.ToTable("Drivers", "dbo");
 
                             b1.WithOwner()
                                 .HasForeignKey("DriverId");

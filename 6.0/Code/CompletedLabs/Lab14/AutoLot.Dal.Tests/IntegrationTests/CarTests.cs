@@ -521,8 +521,8 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
             var carCount = Context.Cars.Count();
             var car = Context.Cars.AsNoTracking().First(c => c.Id == 9);
             var context2 = TestHelpers.GetSecondContext(Context, trans);
-            //context2.Entry(car).State = EntityState.Deleted;
-            context2.Cars.Remove(car);
+            context2.Entry(car).State = EntityState.Deleted;
+            //context2.Cars.Remove(car);
             context2.SaveChanges();
             var newCarCount = Context.Cars.Count();
             Assert.Equal(carCount - 1, newCarCount);

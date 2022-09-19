@@ -27,5 +27,5 @@ public class CarDriverRepo : TemporalTableBaseRepo<CarDriver>, ICarDriverRepo
         => BuildBaseQuery().IgnoreQueryFilters();
 
     public override CarDriver Find(int? id)
-        => BuildBaseQuery().IgnoreQueryFilters().Where(x => x.Id == id).FirstOrDefault();
+        => BuildBaseQuery().IgnoreQueryFilters().FirstOrDefault(x => x.Id == id);
 }
