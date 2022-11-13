@@ -62,7 +62,7 @@ dotnet add AutoLot.Mvc package Microsoft.Web.LibraryManager.Build
 dotnet add AutoLot.Mvc package Microsoft.EntityFrameworkCore  
 dotnet add AutoLot.Mvc package Microsoft.EntityFrameworkCore.Design  
 dotnet add AutoLot.Mvc package Microsoft.EntityFrameworkCore.SqlServer  
-dotnet add AutoLot.Mvc package Microsoft.VisualStudio.Web.CodeGeneration.Design  
+dotnet add AutoLot.Mvc package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.10 
 
 dotnet add AutoLot.Mvc reference AutoLot.Models
 dotnet add AutoLot.Mvc reference AutoLot.Dal
