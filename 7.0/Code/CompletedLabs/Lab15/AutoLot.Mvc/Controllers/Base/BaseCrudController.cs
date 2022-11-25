@@ -60,7 +60,7 @@ public abstract class BaseCrudController<TEntity, TController> : Controller wher
         if (ModelState.IsValid)
         {
             BaseRepoInstance.Add(entity);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Details),new[] {entity.Id});
         }
         ViewData["LookupValues"] = GetLookupValues();
         return View(entity);
@@ -89,7 +89,7 @@ public abstract class BaseCrudController<TEntity, TController> : Controller wher
         if (ModelState.IsValid)
         {
             BaseRepoInstance.Update(entity);
-            return RedirectToAction(nameof(Details));
+            return RedirectToAction(nameof(Details), new {entity.Id});
         }
         ViewData["LookupValues"] = GetLookupValues();
         return View(entity);
