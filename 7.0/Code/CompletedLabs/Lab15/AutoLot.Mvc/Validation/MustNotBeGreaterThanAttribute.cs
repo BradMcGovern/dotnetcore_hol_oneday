@@ -47,12 +47,20 @@ namespace AutoLot.Mvc.Validation;
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             var otherPropertyInfo = validationContext.ObjectType.GetProperty(_otherPropertyName);
+            if (otherPropertyInfo == null)
+            {
+                return new ValidationResult("Unable to validate property. Please contact support");
+            }
             SetOtherPropertyName(otherPropertyInfo);
             if (!int.TryParse(value.ToString(), out int toValidate))
             {
                 return new ValidationResult($"{validationContext.DisplayName} must be numeric.");
             }
-            var otherValue = (int)otherPropertyInfo.GetValue(validationContext.ObjectInstance, null);
+            var otherPropObjectValue = otherPropertyInfo.GetValue(validationContext.ObjectInstance, null);
+            if (otherPropObjectValue == null || !int.TryParse(otherPropObjectValue.ToString(), out var otherValue))
+            {
+                return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
+            }
             return toValidate > otherValue
                 ? new ValidationResult(FormatErrorMessage(validationContext.DisplayName))
                 : ValidationResult.Success;

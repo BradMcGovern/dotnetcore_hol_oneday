@@ -5,8 +5,6 @@
 // http://www.skimedic.com 2022/11/10
 // ==================================
 
-using Microsoft.EntityFrameworkCore.Diagnostics;
-
 namespace AutoLot.Dal.EfStructures;
 
 public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
@@ -14,7 +12,7 @@ public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<Applicati
     public ApplicationDbContext CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-        //var connectionString = @"server=.,5433;Database=AutoLot_Hol;User Id=sa;Password=P@ssw0rd;";
+        //var connectionString = @"server=.,5433;Database=AutoLot_Hol;User Id=sa;Password=P@ssw0rd;Encrypt=false;";
         var connectionString = @"server=(localdb)\MsSqlLocalDb;Database=AutoLot_Hol;Integrated Security=true";
         optionsBuilder.UseSqlServer(connectionString);
         //optionsBuilder.UseSqlServer(connectionString, options => options.EnableRetryOnFailure());

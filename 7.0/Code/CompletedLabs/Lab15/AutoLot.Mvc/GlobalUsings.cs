@@ -36,7 +36,7 @@ global using Microsoft.AspNetCore.Mvc.ViewComponents;
 global using Microsoft.AspNetCore.Razor.TagHelpers;
 
 global using Microsoft.EntityFrameworkCore;
-
+global using Microsoft.EntityFrameworkCore.Diagnostics;
 global using Microsoft.Extensions.DependencyInjection.Extensions;
 global using Microsoft.Extensions.Options;
 

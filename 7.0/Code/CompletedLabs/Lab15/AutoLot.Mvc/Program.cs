@@ -1,20 +1,17 @@
 // Copyright Information
 // ==================================
-// AutoLot - AutoLot.Mvc - Program.cs
+// AutoLot70 - AutoLot.Mvc - Program.cs
 // All samples copyright Philip Japikse
-// http://www.skimedic.com 2021/11/13
+// http://www.skimedic.com 2022/11/10
 // ==================================
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
-
-//used to be ConfiguresServices()
 //Configure logging
 builder.ConfigureSerilog();
 builder.Services.RegisterLoggingInterfaces();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
     // This lambda determines whether user consent for non-essential cookies is
@@ -29,8 +26,12 @@ builder.Services.AddSession(options => { options.Cookie.IsEssential = true; });
 
 var connectionString = builder.Configuration.GetConnectionString("AutoLot");
 builder.Services.AddDbContextPool<ApplicationDbContext>(
-    options => options.UseSqlServer(connectionString,
-        sqlOptions => sqlOptions.EnableRetryOnFailure().CommandTimeout(60)));
+  options =>
+  {
+      options.ConfigureWarnings(wc => wc.Ignore(RelationalEventId.BoolWithDefaultWarning));
+      options.UseSqlServer(connectionString,
+        sqlOptions => sqlOptions.EnableRetryOnFailure().CommandTimeout(60));
+  });
 
 builder.Services.AddScoped<ICarDriverRepo, CarDriverRepo>();
 builder.Services.AddScoped<ICarRepo, CarRepo>();
@@ -76,7 +77,6 @@ else
 
 var app = builder.Build();
 
-//used to be Configure()
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

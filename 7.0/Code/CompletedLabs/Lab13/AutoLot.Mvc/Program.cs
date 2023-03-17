@@ -27,8 +27,12 @@ builder.Services.AddSession(options => { options.Cookie.IsEssential = true; });
 
 var connectionString = builder.Configuration.GetConnectionString("AutoLot");
 builder.Services.AddDbContextPool<ApplicationDbContext>(
-    options => options.UseSqlServer(connectionString,
-        sqlOptions => sqlOptions.EnableRetryOnFailure().CommandTimeout(60)));
+  options =>
+  {
+      options.ConfigureWarnings(wc => wc.Ignore(RelationalEventId.BoolWithDefaultWarning));
+      options.UseSqlServer(connectionString,
+        sqlOptions => sqlOptions.EnableRetryOnFailure().CommandTimeout(60));
+  });
 
 builder.Services.AddScoped<ICarDriverRepo, CarDriverRepo>();
 builder.Services.AddScoped<ICarRepo, CarRepo>();

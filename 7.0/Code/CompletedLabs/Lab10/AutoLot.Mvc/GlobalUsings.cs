@@ -21,4 +21,5 @@ global using Microsoft.AspNetCore.Mvc.Infrastructure;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.DependencyInjection.Extensions;
 global using Microsoft.Extensions.Options;
+global using Microsoft.EntityFrameworkCore.Diagnostics;
 global using System.Diagnostics;
