@@ -1,0 +1,657 @@
+[23-03-17 21:03:40 Information]AutoLot.Mvc:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\japik\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+in method  at :
+
+[23-03-17 21:03:40 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:7023"
+in method  at :
+
+[23-03-17 21:03:40 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5299"
+in method  at :
+
+[23-03-17 21:03:40 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[23-03-17 21:03:40 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[23-03-17 21:03:40 Information]AutoLot.Mvc:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc"
+in method  at :
+
+[23-03-17 21:03:42 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/ - -
+in method  at :
+
+[23-03-17 21:03:42 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:42 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[23-03-17 21:03:43 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[23-03-17 21:03:43 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 6.8098ms.
+in method  at :
+
+[23-03-17 21:03:43 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 2025.1015ms.
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 2258.9537ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/ - - - 200 - text/html;+charset=utf-8 2396.6822ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/lib/bootstrap/css/bootstrap.css?v=zHTP5z-AQz6gA72eznHf1rpvlpi3cLbuITk0XHKlmJw - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/lib/jquery/jquery.js?v=3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC_7pNI - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/css/site.css?v=MNV_ZndEUarN_6qiD42dSx6UKlsftyn9_0ubinfXW9Q - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/lib/font-awesome/css/all.css?v=DLjMP-5CdeGCI2qxnDquVSdPQ6oP_enAUQ2NWfz45dw - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/lib/bootstrap/js/bootstrap.bundle.js?v=b6FZhfBs07Z8WHg4IG6V1PfDsOrbkQVabKBUzmlYbsU - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/font-awesome/css/all.css"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/jquery/jquery.js"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/AutoLot.Mvc.styles.css"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/bootstrap/css/bootstrap.css"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/js/site.js"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/css/site.css"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/lib/bootstrap/js/bootstrap.bundle.js"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 51.8464ms
+in method  at :
+
+[23-03-17 21:03:45 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.IO.FileNotFoundException: Could not find file 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'.
+File name: 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo.CreateReadStream()
+   at WebOptimizer.Asset.LoadFileContentAsync(IFileProvider fileProvider, AssetContext config, String sourceFile)
+   at WebOptimizer.Asset.ExecuteAsync(HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetBuilder.BuildAsync(IAsset asset, HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetMiddleware.HandleAssetAsync(HttpContext context, IAsset asset, WebOptimizerOptions options)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - - - 500 - text/plain;+charset=utf-8 328.7402ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/css/site.css"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/css/site.css?v=MNV_ZndEUarN_6qiD42dSx6UKlsftyn9_0ubinfXW9Q - - - 200 - text/css;+charset=UTF-8 383.7495ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\js\site.js"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 text/javascript 413.6815ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/font-awesome/css/all.css"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/lib/font-awesome/css/all.css?v=DLjMP-5CdeGCI2qxnDquVSdPQ6oP_enAUQ2NWfz45dw - - - 200 - text/css;+charset=UTF-8 449.2081ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/bootstrap/css/bootstrap.css"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/lib/bootstrap/css/bootstrap.css?v=zHTP5z-AQz6gA72eznHf1rpvlpi3cLbuITk0XHKlmJw - - - 200 - text/css;+charset=UTF-8 538.5671ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/lib/font-awesome/webfonts/fa-solid-900.woff2?v=MhYoM-xA-Sok4EVlj1PhloWWlwA - -
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/lib/font-awesome/webfonts/fa-solid-900.woff2"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\lib\font-awesome\webfonts\fa-solid-900.woff2"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/lib/font-awesome/webfonts/fa-solid-900.woff2?v=MhYoM-xA-Sok4EVlj1PhloWWlwA - - - 200 78268 font/woff2 37.8199ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/bootstrap/js/bootstrap.bundle.js"'
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/lib/bootstrap/js/bootstrap.bundle.js?v=b6FZhfBs07Z8WHg4IG6V1PfDsOrbkQVabKBUzmlYbsU - - - 200 - text/javascript;+charset=UTF-8 723.0605ms
+in method  at :
+
+[23-03-17 21:03:45 Information]AutoLot.Mvc:WebOptimizer.AssetBuilder
+Message:Generated output and responded to request for '"/lib/jquery/jquery.js"'
+in method  at :
+
+[23-03-17 21:03:46 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/lib/jquery/jquery.js?v=3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC_7pNI - - - 200 - text/javascript;+charset=UTF-8 742.6450ms
+in method  at :
+
+[23-03-17 21:03:46 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/favicon.ico - -
+in method  at :
+
+[23-03-17 21:03:46 Information]AutoLot.Mvc:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\favicon.ico"'
+in method  at :
+
+[23-03-17 21:03:46 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/favicon.ico - - - 200 5430 image/x-icon 5.8397ms
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/Cars/ByMake/5/BMW - -
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.CarsController.ByMake (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"ByMake\", controller = \"Cars\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ByMake(Int32, System.String)" on controller "AutoLot.Mvc.Controllers.CarsController" ("AutoLot.Mvc").
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.CarsController.ByMake (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.CarsController.ByMake (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 64.9985ms.
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "ByMake".
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("21"ms) [Parameters=["@__makeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='60']"
+""SELECT [i].[Id], [i].[Color], [i].[DateBuilt], [i].[Display], [i].[IsDrivable], [i].[MakeId], [i].[PetName], [i].[Price], [i].[TimeStamp], [i].[ValidFrom], [i].[ValidTo], [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Inventory] AS [i]
+INNER JOIN [dbo].[Makes] AS [m] ON [i].[MakeId] = [m].[Id]
+WHERE [i].[IsDrivable] = CAST(1 AS bit) AND [i].[MakeId] = @__makeId_0
+ORDER BY [i].[PetName]"
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "ByMake" executed in 249.6762ms.
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.CarsController.ByMake (AutoLot.Mvc)" in 364.8352ms
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.CarsController.ByMake (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/Cars/ByMake/5/BMW - - - 200 - text/html;+charset=utf-8 383.2525ms
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - -
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/AutoLot.Mvc.styles.css"'
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[23-03-17 21:03:52 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.IO.FileNotFoundException: Could not find file 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'.
+File name: 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo.CreateReadStream()
+   at WebOptimizer.Asset.LoadFileContentAsync(IFileProvider fileProvider, AssetContext config, String sourceFile)
+   at WebOptimizer.Asset.ExecuteAsync(HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetBuilder.BuildAsync(IAsset asset, HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetMiddleware.HandleAssetAsync(HttpContext context, IAsset asset, WebOptimizerOptions options)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 1.9956ms
+in method  at :
+
+[23-03-17 21:03:52 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - - - 500 - text/plain;+charset=utf-8 12.1014ms
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/Admin/Makes/Index - -
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Makes\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "AutoLot.Mvc.Areas.Admin.Controllers.MakesController" ("AutoLot.Mvc").
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.4702ms.
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 32.9599ms.
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)" in 58.8371ms
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Areas.Admin.Controllers.MakesController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/Admin/Makes/Index - - - 200 - text/html;+charset=utf-8 67.3570ms
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - -
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/AutoLot.Mvc.styles.css"'
+in method  at :
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 1.9150ms
+in method  at :
+
+[23-03-17 21:03:57 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.IO.FileNotFoundException: Could not find file 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'.
+File name: 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo.CreateReadStream()
+   at WebOptimizer.Asset.LoadFileContentAsync(IFileProvider fileProvider, AssetContext config, String sourceFile)
+   at WebOptimizer.Asset.ExecuteAsync(HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetBuilder.BuildAsync(IAsset asset, HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetMiddleware.HandleAssetAsync(HttpContext context, IAsset asset, WebOptimizerOptions options)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+[23-03-17 21:03:57 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - - - 500 - text/plain;+charset=utf-8 12.7230ms
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/Home/WithdrawConsent - -
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.WithdrawConsent (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"WithdrawConsent\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult WithdrawConsent()" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.WithdrawConsent (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.WithdrawConsent (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 2.9822ms.
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.RedirectToActionResult
+Message:Executing RedirectResult, redirecting to "/Home/Index".
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.WithdrawConsent (AutoLot.Mvc)" in 27.5788ms
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.WithdrawConsent (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/Home/WithdrawConsent - - - 302 0 - 36.0906ms
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/Home/Index - -
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0318ms.
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 11.7381ms.
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 33.7994ms
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/Home/Index - - - 200 - text/html;+charset=utf-8 42.9873ms
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - -
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/AutoLot.Mvc.styles.css"'
+in method  at :
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 2.2002ms
+in method  at :
+
+[23-03-17 21:03:59 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.IO.FileNotFoundException: Could not find file 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'.
+File name: 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo.CreateReadStream()
+   at WebOptimizer.Asset.LoadFileContentAsync(IFileProvider fileProvider, AssetContext config, String sourceFile)
+   at WebOptimizer.Asset.ExecuteAsync(HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetBuilder.BuildAsync(IAsset asset, HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetMiddleware.HandleAssetAsync(HttpContext context, IAsset asset, WebOptimizerOptions options)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+[23-03-17 21:03:59 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - - - 500 - text/plain;+charset=utf-8 12.5178ms
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/Home/GrantConsent - -
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.GrantConsent (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GrantConsent\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GrantConsent()" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.GrantConsent (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.GrantConsent (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 1.1669ms.
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.RedirectToActionResult
+Message:Executing RedirectResult, redirecting to "/Home/Index".
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.GrantConsent (AutoLot.Mvc)" in 22.3008ms
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.GrantConsent (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/Home/GrantConsent - - - 302 0 - 29.7316ms
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/Home/Index - -
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(Microsoft.Extensions.Options.IOptionsMonitor`1[AutoLot.Services.ViewModels.DealerInfo])" on controller "AutoLot.Mvc.Controllers.HomeController" ("AutoLot.Mvc").
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" - Validation state: Valid
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0269ms.
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""SELECT [m].[Id], [m].[Name], [m].[TimeStamp], [m].[ValidFrom], [m].[ValidTo]
+FROM [dbo].[Makes] AS [m]
+ORDER BY [m].[Name]"
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 10.6992ms.
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)" in 32.0882ms
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"AutoLot.Mvc.Controllers.HomeController.Index (AutoLot.Mvc)"'
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/Home/Index - - - 200 - text/html;+charset=utf-8 38.7754ms
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - -
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:WebOptimizer.AssetMiddleware
+Message:Request started for '"/AutoLot.Mvc.styles.css"'
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[23-03-17 21:04:00 Error]AutoLot.Mvc:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+in method  at :
+System.IO.FileNotFoundException: Could not find file 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'.
+File name: 'D:\Projects\dotnetcore_hol_oneday\7.0\Code\CompletedLabs\Lab15\AutoLot.Mvc\wwwroot\AutoLot.Mvc.styles.css'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo.CreateReadStream()
+   at WebOptimizer.Asset.LoadFileContentAsync(IFileProvider fileProvider, AssetContext config, String sourceFile)
+   at WebOptimizer.Asset.ExecuteAsync(HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetBuilder.BuildAsync(IAsset asset, HttpContext context, IWebOptimizerOptions options)
+   at WebOptimizer.AssetMiddleware.HandleAssetAsync(HttpContext context, IAsset asset, WebOptimizerOptions options)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 1.8507ms
+in method  at :
+
+[23-03-17 21:04:00 Information]AutoLot.Mvc:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7023/AutoLot.Mvc.styles.css?v=evLGXrmnWzvGJ63JcEVwJNrWsW9UhEh7ueq7S9xbiV8 - - - 500 - text/plain;+charset=utf-8 11.2981ms
+in method  at :
+
